@@ -1,0 +1,36 @@
+.playlist_item {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    border-radius: 0.3em;
+    text-decoration: none;
+}
+
+.playlist_item:hover {
+    background-color: var(--sec_background);
+}
+
+.playlist_item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 0.3em;
+}
+
+.info_side_menu_card {
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+}
+
+.info_side_menu_card h4 {
+    color: #ffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.info_side_menu_card span {
+    color: var(--font_color);
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
