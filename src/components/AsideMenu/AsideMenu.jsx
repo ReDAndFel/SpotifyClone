@@ -34,7 +34,7 @@ const AsideMenu = () => {
                 </ul>
                 {
                     playlists.map(playlist => (
-                        <SideMenuCard key={playlist.id} playlist={playlist} />
+                        <SideMenuCard key={playlist.id} playlist={playlist} withoutFlag={false} />
                     ))
                 }
 

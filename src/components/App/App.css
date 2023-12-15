@@ -24,6 +24,26 @@ main {
   overflow-y: auto;
 }
 
+.main_header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background: rgb(14,143,14);
+background: linear-gradient(180deg, rgba(14,143,14,1) 0%, rgba(22,22,22,1) 100%);
+  padding: 1em;
+}
+
+.main_header h1 {
+  color: #ffffff;
+  font-size: 2.3em;
+}
+
+.main_header_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
 footer {
   min-height: 100px;
   grid-area: player;

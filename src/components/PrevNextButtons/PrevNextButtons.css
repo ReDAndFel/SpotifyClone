@@ -1,0 +1,20 @@
+    .prev_next_container {
+        display: flex;
+        gap: 0.5em;
+    }
+
+    .prev_next_button {
+        background: var(--sec_background);
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        cursor: pointer; 
+        color: #fff;
+    }
+
+    .prev_next_button:hover{        
+        color:#dfdfdf ;
+    }

@@ -1,0 +1,27 @@
+.main_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_nav_buttons {
+    display: flex;
+    gap: 0.5em;
+}
+
+.main_nav_button {
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sec_background);
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--font_color);
+}
+
+.main_nav_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color:  rgb(255, 255, 255);
+}
