@@ -1,0 +1,31 @@
+.player_container{
+    display: flex;
+    gap: 1em;
+}
+
+.player_button{
+    border-radius: 50%;
+    background:none;
+    fill: var(--font_color);
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;        
+}
+
+.player_button:hover{
+    fill: #fff;
+    transition: 500ms;
+}
+
+.player_button.play{
+    background:#fff;
+    fill: #000;
+}
+
+.player_button.play:hover{
+  transform: scale(1.1);
+  transition: 500ms;
+}

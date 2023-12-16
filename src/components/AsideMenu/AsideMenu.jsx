@@ -3,7 +3,7 @@ import HomeIcon from "../../assets/icons/HomeICon.jsx"
 import SearchIcon from "../../assets/icons/SearchIcon.jsx"
 import LibraryIcon from "../../assets/icons/LibraryIcon.jsx"
 import "./AsideMenu.css"
-import { playlists } from "../../lib/data.jsx"
+import { playlistsAside } from "../../lib/data.jsx"
 import SideMenuCard from "../SideMenuCard/SideMenuCard.jsx"
 
 const AsideMenu = () => {
@@ -32,11 +32,15 @@ const AsideMenu = () => {
 
 
                 </ul>
-                {
-                    playlists.map(playlist => (
-                        <SideMenuCard key={playlist.id} playlist={playlist} withoutFlag={false} />
-                    ))
-                }
+
+                <div className="section_library_items">
+                    {
+                        playlistsAside.map(playlist => (
+                            <SideMenuCard key={playlist.id} playlist={playlist} withoutFlag={false} />
+                        ))
+                    }
+                </div>
+
 
             </section>
         </nav>

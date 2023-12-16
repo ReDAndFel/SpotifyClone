@@ -1,0 +1,40 @@
+.playlist_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    max-width: 10em;
+    border-radius: 0.3em;
+    text-decoration: none;
+    transition: 400ms;
+    background-color: rgb(31, 31, 31);
+}
+
+.playlist_card:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.playlist_card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 0.3em;
+}
+
+.info_playlist_card {
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    min-height: 4em;
+}
+
+.info_playlist_card h4 {
+    color: #ffff;
+    line-height: 1.25rem;
+}
+
+.info_playlist_card span {
+    color: var(--font_color);
+    font-size: 0.75rem;
+    line-height: 1rem;
+}

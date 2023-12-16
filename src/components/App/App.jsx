@@ -2,8 +2,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import AsideMenu from '../AsideMenu/AsideMenu'
 import MainMenu from '../MainMenu/MainMenu'
 import './App.css'
-import { playlists } from "../../lib/data.jsx"
+import { playlistsAside, playlistsMain } from "../../lib/data.jsx"
 import SideMenuCard from '../SideMenuCard/SideMenuCard.jsx';
+import PlayListCard from '../PlayListCard/PlayListCard.jsx';
+import Player from '../Player/Player.jsx';
 
 function App() {
 
@@ -17,23 +19,42 @@ function App() {
                 <main>
                     <section className='main_header'>
                         <MainMenu />
-                        <h1>Buenos días</h1>
+                        <h2>Buenos días</h2>
                         <div className='main_header_items'>
                             {
-                                playlists.map(playlist => (
+                                playlistsAside.map(playlist => (
                                     <SideMenuCard key={playlist.id} playlist={playlist} withoutFlag={true} />
                                 ))
                             }
                         </div>
                     </section>
+                    <section className='main_items_container'>
+                        <h2>Creado para tí </h2>
 
-                    <section className='main_items'>
-                            
+                        <div className='main_items'>
+                            {
+                                playlistsMain.map(playlist => (
+                                    <PlayListCard key={playlist.id} playlist={playlist} />
+                                ))
+                            }
+                        </div>
+
+
                     </section>
                 </main>
 
                 <footer>
-                    player
+                    <section className='footer_section'>
+                        Cancion actual
+                    </section>
+
+                    <section className='footer_section'>
+                        <Player />
+                    </section>
+
+                    <section className='footer_section'>
+                        volumen
+                    </section>
                 </footer>
             </div>
         </Router>

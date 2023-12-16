@@ -17,3 +17,20 @@
     overflow: hidden;
     flex: 1;
 }
+
+.section_library_items {
+    overflow-y: hidden;
+}
+
+.section_library_items:hover {
+    overflow-y: scroll;
+}
+
+.section_library_items::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 20px;
+}
+
+.section_library_items::-webkit-scrollbar-thumb {
+    background-color: var(--font_color);
+}
