@@ -1,0 +1,39 @@
+.song_item {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    gap: 1em;
+    border-radius: 0.3em;
+    text-decoration: none;
+    transition: 500ms;
+    color: #ffff;
+}
+
+.song_item:hover {
+    background-color: var(--sec_background);
+}
+
+.song_item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.3em;
+}
+
+.info_song {
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+}
+
+.info_song h4 {
+    color: #ffff;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.info_song span {
+    color: var(--font_color);
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
