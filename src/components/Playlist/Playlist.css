@@ -22,20 +22,25 @@
 }
 
 .playlist_header_info img {
-    width: 150px;
+    width: 200px;
     border-radius: 0.3em;
 }
 
-.playlist_header_subinfo h2 {
-    font-size: 2em;
-    color: #ffffff;
+.playlist_header_subinfo h3 {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.playlist_header_subinfo h1 {
+    font-size: 3em;
 }
 
 .playlist_header_subinfo {
     display: flex;
     flex-direction: column;
+    justify-content: end;
     gap: 0.5em;
-    color: var(--font_color);
+    color: #ffffff;
 }
 
 .songs_container {

@@ -1,7 +1,6 @@
 import MainMenu from "../MainMenu/MainMenu"
 import "./Playlist.css"
 import { playlistsAside, songs } from "../../lib/data.jsx"
-import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import SongItem from "../SongItem/SongItem.jsx"
 
@@ -19,8 +18,9 @@ const Playlist = () => {
                 <div className='playlist_header_info'>
                     <img src={playlistCurrently.cover} alt="playlist_image" />
                     <div className="playlist_header_subinfo">
-                        <h2>{playlistCurrently.title}</h2>
-                        <h3>{playlistCurrently.artists.join(", ")}</h3>
+                        <h3>Playlist</h3>
+                        <h1>{playlistCurrently.title}</h1>
+                        <h2>{playlistCurrently.artists.join(", ")}</h2>
                     </div>
                 </div>
             </div>

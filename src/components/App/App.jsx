@@ -5,8 +5,12 @@ import Player from '../Player/Player.jsx'
 import CurrentlySong from '../CurrentlySong/CurrentlySong.jsx'
 import MainPage from '../MainPage/MainPage.jsx'
 import Playlist from '../Playlist/Playlist.jsx'
+import { useSong } from '../../hooks/SongProvider.jsx'
+
 
 function App() {
+    
+    const { currentSong } = useSong()
 
     return (
 
@@ -23,7 +27,7 @@ function App() {
 
             <footer>
                 <section className='footer_section'>
-                    <CurrentlySong song={1} />
+                    {currentSong && <CurrentlySong song={currentSong} />}
                 </section>
 
                 <section className='footer_section'>

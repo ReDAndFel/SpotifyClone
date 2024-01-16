@@ -9,11 +9,11 @@ const PrevNextButtons = () => {
     const navigate = useNavigate()
     return (
         <div className="prev_next_container">
-            <div className="prev_next_button" onClick={navigate(-1)}>
+            <div className="prev_next_button" onClick={() => navigate(-1)}>
                 <BackIcon />
             </div>
 
-            <div className="prev_next_button" onClick={navigate(+1)}>
+            <div className="prev_next_button" onClick={() => navigate(+1)}>
                 <NextIcon />
             </div>
         </div>

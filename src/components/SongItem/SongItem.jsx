@@ -1,9 +1,13 @@
 import PlayIcon from "../../assets/icons/PlayIcon"
+import { useSong } from "../../hooks/SongProvider"
 import "./SongItem.css"
 
 const SongItem = ({ song }) => {
+
+    const { selectSong } = useSong()
+
     return (
-        <div className="song_item">
+        <div className="song_item" onClick={() => selectSong(song)}>
             {song.id}
             <img src={song.image} alt="song_image" />
             <div className="info_song">

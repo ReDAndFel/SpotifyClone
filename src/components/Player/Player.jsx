@@ -6,14 +6,11 @@ import ForwardStepIcon from "../../assets/icons/ForwardStepIcon"
 import RepeatIcon from "../../assets/icons/RepeatIcon"
 import ShufleIcon from "../../assets/icons/ShuffleIcon"
 import { useState } from "react"
+import { useSong } from "../../hooks/SongProvider"
 
 const Player = () => {
 
-    const [isPlay, setIsPlay] = useState(true)
-
-    const handleClickPlay = () => {
-        setIsPlay(!isPlay)
-    }
+    const { audioRef,playSong, isPlaying} = useSong()
 
     return (
         <div className="player_container">
@@ -23,8 +20,8 @@ const Player = () => {
             <button className="player_button">
                 <BackwardStepIcon />
             </button>
-            <button className="player_button play" onClick={handleClickPlay}>
-                {isPlay ? <PlayIcon /> : <PauseIcon />}
+            <button className="player_button play" onClick={() => playSong()}>
+                {!isPlaying ? <PlayIcon /> : <PauseIcon />}
             </button>
             <button className="player_button">
                 <ForwardStepIcon />
@@ -32,6 +29,7 @@ const Player = () => {
             <button className="player_button">
                 <RepeatIcon />
             </button>
+            <audio ref={audioRef} />
         </div>
     )
 }

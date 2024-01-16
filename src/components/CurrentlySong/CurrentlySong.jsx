@@ -2,11 +2,11 @@ import './CurrentlySong.css'
 const CurrentlySong = ({ song }) => {
     return (
         <div className="currently_song">
-            <img src={song.cover} alt="song_image" />
+            <img src={song.image} alt="song_image" />
             <div className="info_currently_song">
-                <a href='#'>titulo{song.title}</a>
+                <a href='#'>{song.title}</a>
                 <span>
-                    nombre1, nombre 2
+                    {song.artists.join(", ")}
                 </span>
             </div>
         </div>

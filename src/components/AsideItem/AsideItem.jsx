@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom"
 import "./AsideItem.css"
 
 const AsideItem = ({href, children}) => {
     return (
         <li className="aside_item">
-            <a href={href}>{children}</a>
+            <Link to={href}>{children}</Link>
         </li>
     )
 }
