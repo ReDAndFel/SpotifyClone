@@ -1,5 +1,5 @@
 import AsideItem from "../AsideItem/AsideItem"
-import HomeIcon from "../../assets/icons/HomeICon.jsx"
+import HomeIcon from "../../assets/icons/HomeIcon.jsx"
 import SearchIcon from "../../assets/icons/SearchIcon.jsx"
 import LibraryIcon from "../../assets/icons/LibraryIcon.jsx"
 import "./AsideMenu.css"
