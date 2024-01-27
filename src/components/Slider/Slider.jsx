@@ -17,7 +17,6 @@ const Slider = ({ isVolume }) => {
     const handleValueRange = (range) => {
         if (isVolume) {
             setValueRange(range)
-            console.log(range)
             if (isVolume) audioRef.current.volume = range / 100
         } else {
             audioRef.current.currentTime = range
@@ -26,7 +25,6 @@ const Slider = ({ isVolume }) => {
 
     useEffect(() => {
         isMute ? audioRef.current.volume = 0 / 100 : audioRef.current.volume = valueRange / 100
-        console.log(isMute)
     }, [isMute])
 
     useEffect(() => {

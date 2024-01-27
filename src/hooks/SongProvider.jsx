@@ -21,8 +21,7 @@ export const SongProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        if (currentSong) {
-            console.log(currentSong)
+        if (currentSong) {            
             audioRef.current.src = `/assets/music/${currentSong.albumId}/0${currentSong.id}.mp3`;
             audioRef.current.play()
             setIsPlaying(true)
