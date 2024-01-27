@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 import "./Slider.css"
 import { useSong } from "../../hooks/SongProvider"
-import VolumeMuteIcon from "../../assets/icons/VolumeMuteIcon"
-import VolumeLowIcon from "../../assets/icons/VolumeLowIcon"
-import VolumeMediumIcon from "../../assets/icons/VolumeMediumIcon"
-import VolumeHighIcon from "../../assets/icons/VolumeHighIcon"
+import VolumeMuteIcon from "../../../public/assets/icons/VolumeMuteIcon"
+import VolumeLowIcon from "../../../public/assets/icons/VolumeLowIcon"
+import VolumeMediumIcon from "../../../public/assets/icons/VolumeMediumIcon"
+import VolumeHighIcon from "../../../public/assets/icons/VolumeHighIcon"
 
 const Slider = ({ isVolume }) => {
 

@@ -1,9 +1,9 @@
 import AsideItem from "../AsideItem/AsideItem"
-import HomeIcon from "../../assets/icons/HomeIcon.jsx"
-import SearchIcon from "../../assets/icons/SearchIcon.jsx"
-import LibraryIcon from "../../assets/icons/LibraryIcon.jsx"
+import HomeIcon from "/public/assets/icons/HomeIcon.jsx"
+import SearchIcon from "/public/assets/icons/SearchIcon.jsx"
+import LibraryIcon from "/public/assets/icons/LibraryIcon.jsx"
 import "./AsideMenu.css"
-import { playlistsAside } from "../../lib/data.jsx"
+import { playlistsAside } from "/public/lib/data.jsx"
 import SideMenuCard from "../SideMenuCard/SideMenuCard.jsx"
 
 const AsideMenu = () => {

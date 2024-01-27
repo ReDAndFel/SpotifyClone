@@ -2,7 +2,7 @@ import MainMenu from "../MainMenu/MainMenu"
 import PlayListCard from "../PlayListCard/PlayListCard"
 import SideMenuCard from "../SideMenuCard/SideMenuCard"
 import "./MainPage.css"
-import { playlistsAside, playlistsMain } from "../../lib/data.jsx"
+import { playlistsAside, playlistsMain } from "/public/lib/data.jsx"
 
 const MainPage = () => {
     return (

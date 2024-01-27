@@ -1,8 +1,8 @@
 import PrevNextButtons from "../PrevNextButtons/PrevNextButtons.jsx"
 import "./MainMenu.css"
-import BellIcon from "../../assets/icons/BellIcon.jsx"
-import ActivityIcon from "../../assets/icons/ActivityIcon.jsx"
-import AccountIcon from "../../assets/icons/AccountIcon.jsx"
+import BellIcon from "/public/assets/icons/BellIcon.jsx"
+import ActivityIcon from "/public/assets/icons/ActivityIcon.jsx"
+import AccountIcon from "/public/assets/icons/AccountIcon.jsx"
 
 const MainMenu = () => {
     return (

@@ -1,4 +1,3 @@
-import PlayIcon from "../../assets/icons/PlayIcon"
 import { useSong } from "../../hooks/SongProvider"
 import "./SongItem.css"
 

@@ -1,10 +1,10 @@
 import "./Player.css"
-import PlayIcon from "../../assets/icons/PlayIcon"
-import PauseIcon from "../../assets/icons/PauseIcon"
-import BackwardStepIcon from "../../assets/icons/BackwardStepIcon"
-import ForwardStepIcon from "../../assets/icons/ForwardStepIcon"
-import RepeatIcon from "../../assets/icons/RepeatIcon"
-import ShufleIcon from "../../assets/icons/ShuffleIcon"
+import PlayIcon from "../../../public/assets/icons/PlayIcon"
+import PauseIcon from "../../../public/assets/icons/PauseIcon"
+import BackwardStepIcon from "../../../public/assets/icons/BackwardStepIcon"
+import ForwardStepIcon from "../../../public/assets/icons/ForwardStepIcon"
+import RepeatIcon from "../../../public/assets/icons/RepeatIcon"
+import ShufleIcon from "../../../public/assets/icons/ShuffleIcon"
 import { useSong } from "../../hooks/SongProvider"
 
 const Player = () => {

@@ -1,6 +1,6 @@
 import MainMenu from "../MainMenu/MainMenu"
 import "./Playlist.css"
-import { playlistsAside, songs } from "../../lib/data.jsx"
+import { playlistsAside, songs } from "../../../public/lib/data.jsx"
 import { useParams } from "react-router-dom"
 import SongItem from "../SongItem/SongItem.jsx"
 

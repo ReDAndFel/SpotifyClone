@@ -1,7 +1,7 @@
 import "./PrevNextButtons.css"
 import { useNavigate } from "react-router-dom";
-import BackIcon from "../../assets/icons/BackIcon"
-import NextIcon from "../../assets/icons/NextIcon"
+import BackIcon from "/public/assets/icons/BackIcon"
+import NextIcon from "/public/assets/icons/NextIcon"
 
 
 const PrevNextButtons = () => {
