@@ -5,7 +5,6 @@ import BackwardStepIcon from "../../assets/icons/BackwardStepIcon"
 import ForwardStepIcon from "../../assets/icons/ForwardStepIcon"
 import RepeatIcon from "../../assets/icons/RepeatIcon"
 import ShufleIcon from "../../assets/icons/ShuffleIcon"
-import { useState } from "react"
 import { useSong } from "../../hooks/SongProvider"
 
 const Player = () => {

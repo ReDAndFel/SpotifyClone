@@ -7,4 +7,4 @@ const TimeIcon = () => {
   )
 }
 
-export default TimeIcon;
+export default TimeIcon

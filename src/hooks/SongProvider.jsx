@@ -24,7 +24,6 @@ export const SongProvider = ({ children }) => {
         if (currentSong) {
             audioRef.current.src = `../../src/assets/music/${currentSong.albumId}/0${currentSong.id}.mp3`
             audioRef.current.play()
-            audioRef.current.volume = 0.1
             setIsPlaying(true)
         }
     }, [currentSong]);

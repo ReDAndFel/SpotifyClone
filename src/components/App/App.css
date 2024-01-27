@@ -28,6 +28,12 @@ footer {
 
 .footer_section{
   display: flex;
+  flex-direction: column;
+  gap: 1em;
   justify-content: center;
   align-items: center;
+}
+
+.slider_volume_container{
+  width: 10em;
 }

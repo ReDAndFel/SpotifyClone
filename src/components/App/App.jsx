@@ -6,6 +6,7 @@ import CurrentlySong from '../CurrentlySong/CurrentlySong.jsx'
 import MainPage from '../MainPage/MainPage.jsx'
 import Playlist from '../Playlist/Playlist.jsx'
 import { useSong } from '../../hooks/SongProvider.jsx'
+import Slider from '../Slider/Slider.jsx'
 
 
 function App() {
@@ -32,10 +33,14 @@ function App() {
 
                 <section className='footer_section'>
                     <Player />
+                    <Slider isVolume={false}/>
                 </section>
 
                 <section className='footer_section'>
-                    volumen
+                    <div className='slider_volume_container'>
+                        <Slider isVolume />
+                    </div>
+                
                 </section>
             </footer>
         </div>
